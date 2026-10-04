@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPV PRIVATE LINK</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: red;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .box {
+      width: 85%;
+      max-width: 400px;
+      padding: 35px 25px;
+      border: 1px solid #333;
+      border-radius: 15px;
+      background: #111;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    input {
+      width: 90%;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      background: #222;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 98%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      color: blue;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+
+    .activation {
+      background: #222;
+      color: red;
+      border: 1px solid #555;
+    }
+
+    #message {
+      margin-top: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h1>WELCOME TO CPV PRIVATE LINK 🥵</h1>
+
+    <div class="subtitle">
+      The most discreet private link for all private content 🥵😋
+    </div>
+
+    <input
+      type="text"
+      id="code"
+      placeholder="Enter your membership activation code"
+    />
+
+    <button onclick="unlockLink()">ENTER</button>
+
+    <button class="activation" onclick="getActivation()">
+      GET ACTIVATION CODE
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+  <script>
+
+    function unlockLink() {
+
+      const enteredCode =
+        document.getElementById("code").value;
+
+      const correctCode = "private0813";
+
+      if (enteredCode === correctCode) {
+
+        document.getElementById("message").innerHTML =
+          "Access granted 🔓";
+
+        setTimeout(function() {
+          window.location.href = "https://private0813.com";
+        }, 1000);
+
+      } else {
+
+        document.getElementById("message").innerHTML =
+          "Invalid activation code ❌";
+      }
+    }
+
+
+    function getActivation() {
+
+      // Opens your new chat page instead of Signal
+      window.location.href = "chat.html";
+
+    }
+
+  </script>
+
+</body>
+</html>
